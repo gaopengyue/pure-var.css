@@ -22,14 +22,18 @@ input:focus {
 .pure-form-var input[type="checkbox"]::before,
 .pure-form-var input[type="checkbox"]::after,
 .pure-form-var input[type="checkbox"].checkbox-ios,
+.pure-form-var input[type="checkbox"].checkbox-android,
 .pure-form-var input[type="checkbox"].checkbox-ios::before,
+.pure-form-var input[type="checkbox"].checkbox-android::before,
 .pure-form-var input[type="radio"],
 .pure-form-var input[type="radio"]::before {
 	background-color: #fff;
 }
 .pure-form-var input[type="checkbox"],
 .pure-form-var input[type="checkbox"].checkbox-ios,
-.pure-form-var input[type="checkbox"].checkbox-ios::before {
+.pure-form-var input[type="checkbox"].checkbox-android,
+.pure-form-var input[type="checkbox"].checkbox-ios::before,
+.pure-form-var input[type="checkbox"].checkbox-android::before {
 	border: 1px solid #bbb;
 }
 
@@ -83,10 +87,6 @@ input:focus {
 	-webkit-transition: transform 0.3s;
 	transition: transform 0.3s;
 }
-.pure-form-var input[type="checkbox"].checkbox-android::before {
-	-webkit-transform: translate(1px,2px);
-	transform: translate(1px,2px);
-}
 .pure-form-var input[type="checkbox"].checkbox-ios::after,
 .pure-form-var input[type="checkbox"].checkbox-android::after {
 	background-color: transparent;
@@ -98,13 +98,10 @@ input:focus {
 	border-color: #e2e2e2;
 }
 
-.pure-form-var input[type="checkbox"].checkbox-ios:checked::before {
+.pure-form-var input[type="checkbox"].checkbox-ios:checked::before,
+.pure-form-var input[type="checkbox"].checkbox-android:checked::before {
 	-webkit-transform: translate(16px, 1px);
 	transform: translate(16px, 1px);
-}
-.pure-form-var input[type="checkbox"].checkbox-android:checked::before {
-	-webkit-transform: translate(18px, 2px);
-	transform: translate(18px, 2px);
 }
 /* ios */
 .pure-form-var input[type="checkbox"].checkbox-ios {
